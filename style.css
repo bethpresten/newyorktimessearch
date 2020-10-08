@@ -21,3 +21,7 @@ button {
   margin-bottom: 10px;
   font-size: 18px;
 }
+
+.container-fluid {
+  background-color: whitesmoke;
+}

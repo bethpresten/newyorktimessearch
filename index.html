@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
   <head>
     <meta charset="utf-8" />
@@ -58,28 +54,31 @@
       </div>
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+          <label
+            class="input-group-text"
+            for="inputGroupSelect02"
+            id="searchText"
+            >Number of Articles to Retrieve:
+          </label>
+        </div>
+        <div class="col-md-6">
           <div class="input-group mb-3">
-            <div class="input-group-prepend" id="searchText">
-              <span class="input-group-text" id="inputGroup-sizing-default"
-                >Number of Records to Retrieve:</span
-              >
-            </div>
-            <input
-              type="text"
-              class="form-control"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-default"
-              maxlength="100"
-              size="100"
-            />
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Choose...</option>
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+            </select>
+            <div class="input-group-append"></div>
           </div>
         </div>
       </div>
+
       <div class="row">
         <div class="col-md-12">
           <div class="input-group mb-3">
-            <div class="input-group-prepend" id="search-text">
+            <div class="input-group-prepend" id="searchText">
               <span class="input-group-text" id="inputGroup-sizing-default"
                 >Start Year (Optional):
               </span>
